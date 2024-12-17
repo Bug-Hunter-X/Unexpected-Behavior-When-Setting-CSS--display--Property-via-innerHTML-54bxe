@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+<style>
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+  <div id="myDiv" class="hidden">
+    This text is now hidden correctly.
+  </div>
+  <script>
+    // Correct approach using class manipulation
+    //document.getElementById("myDiv").className = "hidden";
+    
+    //Alternative approach: Correct approach using direct style manipulation
+    // document.getElementById("myDiv").style.display = "none";
+  </script>
+</body>
+</html>
